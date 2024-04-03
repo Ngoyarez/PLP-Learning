@@ -1,15 +1,4 @@
 def calculate_discount(price, discount_percent):
-  """Calculates the final price after applying a discount (if applicable).
-
-  Args:
-      price: The original price of the item.
-      discount_percent: The discount percentage (0 to 100).
-
-  Returns:
-      The final price after applying the discount, or the original price
-      if the discount is less than 20%.
-  """
-
   if discount_percent >= 20:
     discount = price * discount_percent / 100
     final_price = price - discount
